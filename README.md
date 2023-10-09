@@ -1,5 +1,6 @@
 # SideMenuLikeTwitter
 It's a side menu sample that operates as smoothly as X(Twitter), and it's based on SwiftUI.
+
 現在X(旧Twitter)のSideMenuを実装。
 DragGestureを活用し、DragのvelocityによるSideMenuの開閉処理でUXにストレスレスを目指しました。
 
