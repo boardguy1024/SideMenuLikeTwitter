@@ -17,15 +17,16 @@ struct SideMenu: View {
             
             // Profile
             VStack(alignment: .leading, spacing: 10) {
-                Image("Pic")
+                Image("elon")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 65, height: 65)
                     .clipShape(Circle())
                 
-                Text("iJustine")
+                
+                Text("Elon Musk")
                     .font(.title.bold())
-                Text("@ijustine")
+                Text("@elonmusk")
                     .font(.callout)
                 
                 HStack(spacing: 12) {
@@ -36,8 +37,9 @@ struct SideMenu: View {
                         
                         Label {
                             Text("Followers")
+                                .font(.caption)
                         } icon: {
-                            Text("1.2M")
+                            Text("20.5M")
                                 .fontWeight(.bold)
                         }
                     }
@@ -48,8 +50,9 @@ struct SideMenu: View {
                         
                         Label {
                             Text("following")
+                                .font(.caption)
                         } icon: {
-                            Text("189")
+                            Text("1.2k")
                                 .fontWeight(.bold)
                         }
                     }
@@ -63,7 +66,7 @@ struct SideMenu: View {
             ScrollView(.vertical, showsIndicators: false) {
                 
                 VStack {
-                    VStack(alignment: .leading, spacing: 45) {
+                    VStack(alignment: .leading, spacing: 40) {
                         
                         TabButton(title: "Profile", image: "Profile")
                         
@@ -72,40 +75,15 @@ struct SideMenu: View {
                         TabButton(title: "Bookmarks", image: "Bookmarks")
                         
                         TabButton(title: "Moments", image: "Moments")
-                        
-                        TabButton(title: "Purchases", image: "Purchases")
-                        
-                        TabButton(title: "Topics", image: "Topics")
-                        
-                        TabButton(title: "Monetization", image: "Monetization")
                     }
                     .padding()
                     .padding(.leading)
                     .padding(.top, 35)
                     
-                    Divider()
-                    
-                    TabButton(title: "Twitter Ads", image: "Ads")
-                        .padding()
-                        .padding(.leading)
+                    Spacer()
                     
                     Divider()
                     
-                    VStack(alignment: .leading, spacing: 15) {
-                        
-                        Button("Setting And Privacy") {
-                            
-                        }
-                        
-                        Button("Help Center") {
-                            
-                        }
-                    }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .foregroundColor(.primary)
-                    .padding()
-                    .padding(.leading)
-
                 }
             }
             
